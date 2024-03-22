@@ -20,6 +20,7 @@ body {
     font-family: var(--fonte-principal);
     font-size: 16px;
     font-weight: 400;
+    width: 100%;
 }
 .principal{
     background-image: url("img/Background.png");
@@ -143,5 +144,59 @@ body {
    margin:1em 0;
    color: var(--cinza-secundario);
    font-size: 14px;
+}
+
+@media screen and (max-width: 768px){
+    
+    
+  .container {
+     display: block;
+     background-image: none;
+     height: 90vh;
+   
+  }
+  .container__imagem{
+     width: 50vw;
+  }
+  .container__caixa{
+     margin: 2em 2em;
+  }
+  .secundario{
+    margin: 0;
+    text-align: center;
+}
+.secundario__imagem{
+    width: 70vw;
+    
+}
+.inverso{
+    display: flex;
+    flex-direction: column-reverse;
+    margin: 0;
+}
+.container__descricao{
+    margin-bottom: 6em;
+}
+.container__secundario-paragrafo{
+    padding: 0.5em 0 1em 0;
+}
+.dispositivos__lista{
+    display: block;
+}
+.dispositivos__lista li{
+    padding-bottom: 3em;
+}
+.dispositivos__titulo{
+    margin: 1em 1em;
+}
+.rodape__lista{
+    display: none;
+}
+.rodape__texto{
+    margin:  3em 1em;
+    text-align: start;
+    line-height: 24px;
+}
+    
 }
 
